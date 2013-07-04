@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.lilait.android.oba"
+      android:versionCode="4"
+      android:versionName="1.4">
+       <uses-permission android:name="android.permission.INTERNET"/>
+       <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <application android:icon="@drawable/chuck_icon_bg" android:label="@string/app_name" android:name="com.lilait.android.oba.ChuckApplication" >
+        <activity android:name="com.lilait.android.oba.SplashActivity"
+                  android:label="@string/app_name"
+                   android:screenOrientation="portrait"
+                  android:configChanges="keyboard|keyboardHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+		<activity android:name="com.lilait.android.oba.QuestionActivity"  android:screenOrientation="portrait"
+                  android:configChanges="keyboard|keyboardHidden" />
+		<activity android:name="com.lilait.android.oba.RulesActivity"  android:screenOrientation="portrait"
+                  android:configChanges="keyboard|keyboardHidden"/>
+		<activity android:name="com.lilait.android.oba.EndgameActivity"  android:screenOrientation="portrait"
+                  android:configChanges="keyboard|keyboardHidden"/>
+		<activity android:name="com.lilait.android.oba.SettingsActivity"  android:screenOrientation="portrait"
+                  android:configChanges="keyboard|keyboardHidden"/>
+		<activity android:name="com.lilait.android.oba.AnswersActivity"  android:screenOrientation="landscape"
+                  android:configChanges="keyboard|keyboardHidden"/>
+		 <activity android:name="com.google.ads.AdActivity"
+        android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+        android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"  />
+		
+    </application>
+    <uses-sdk android:minSdkVersion="4" />
+
+</manifest> 

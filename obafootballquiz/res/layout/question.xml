@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/ScrollView01"
+	android:layout_width="fill_parent"	
+	android:layout_height="fill_parent">
+<LinearLayout 
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent" android:gravity="center_horizontal"
+	android:background="@drawable/background">
+ <com.google.ads.AdView
+            xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+            android:id="@+id/ad"
+            android:layout_height="wrap_content"
+             android:layout_width="fill_parent"
+             ads:adUnitId="a1516e747a606a3"
+        ads:adSize="BANNER"
+        ads:refreshInterval="30"
+            ads:loadAdOnCreate="true" 
+            />
+
+	<LinearLayout android:orientation="horizontal"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:paddingTop="5dip" android:paddingBottom="5dip"
+		android:gravity="center_horizontal">
+
+		<RadioGroup android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:orientation="vertical"
+			android:id="@+id/group1">
+			
+			<TextView android:layout_width="200dip"
+				android:layout_height="200dip" android:textColor="#ffffff"
+				android:textStyle="bold" android:id="@+id/question"/>
+			
+			<RadioButton android:checked="false" android:id="@+id/answer1" />
+			
+			<RadioButton android:checked="false" android:id="@+id/answer2" />
+			
+			<RadioButton android:checked="false" android:id="@+id/answer3" />
+			
+			<RadioButton android:checked="false" android:id="@+id/answer4" />
+			
+		</RadioGroup>
+
+	</LinearLayout>
+	
+	
+
+	<LinearLayout android:orientation="horizontal"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:paddingTop="5dip" android:paddingBottom="5dip"
+		android:gravity="center_horizontal">
+
+		<Button android:text="Next" android:id="@+id/nextBtn"
+			android:layout_width="80dip" android:layout_alignParentRight="true"
+			android:layout_height="wrap_content" android:background="@drawable/button_selector"
+			android:paddingTop="5dip" android:paddingBottom="5dip"
+			android:textColor="#ffffff" />
+
+	</LinearLayout>
+
+</LinearLayout>
+</ScrollView>
