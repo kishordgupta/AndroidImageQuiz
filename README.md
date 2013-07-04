@@ -10,3 +10,6 @@ Guess the football game - Football Club logo quiz for fun!
 No matter you are a football fan or not, you must know some football club logos since it's the most inspirational sport in the world! Now quiz it,football logo quiz, for fun!
 
 GooglePlay link : https://play.google.com/store/apps/details?id=com.lilait.android.oba
+
+
+Developed by: kishor datta gupta
